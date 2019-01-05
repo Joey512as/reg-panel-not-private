@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Project</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>                                                                                <!-- Наложение слоя поверх видео -->
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">                            <!--запуск видео, автовоспроизведение, без звука, повтор-->
+                <source src="https://storage.googleapis.com/coverr-main/mp4/A-moment.mp4" type="video/mp4">
+            </video>
+        <div class="container h-100">                                                                              <!--высота контейнера-->
+            <div class="d-flex text-center h-100">                                                                   <!-- ширина и высота тектса-->
+                <div class="my-auto w-100 text-white" align="center">
+                    <div class="tab-content tabs">
+                        <div role="tabpanel" class="tab-pane in active"  id="Section1">
+                            <form class="form-horizontal">
+                                <div class="form-top">
+                                    <label for="avtorization">Авторизация</label>
+                                </div>
+                                <div class="form-group">
+                                     <label for="exampleInputEmail1">Логин</label>
+                                     <input type="email" name="login" class="form-control" id="login" aria-describedby="emailHelp" placeholder="Введите @mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Пароль</label>
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Пароль">
+                                </div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <div class="row text-center">
+                                    <div class="col-12"><li role="presentation"><button type="button" class="btn btn-primary" onclick="return validateForm()">Войти</button></li></div>
+                                    <div class="col-12"><li role="presentation" class="active"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><button type="submit" class="btn   btn-reg">Регистрация</button></a></li></div>
+                                    </div>
+                                </ul>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="Section2">
+                            <form class="form-horizontal">
+                                <div class="form-top">
+                                    <label for="registrarion">Регистрация</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Имя пользователя</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Введите свой @mail</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите @mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Подтвердите пароль</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Подтвердите пароль">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Подтвердить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fon"></div>
+    </header>
+    <section class="my-5">
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est totam magni eligendi eaque odit vero dolores repellat quaerat rerum velit. Consectetur consequatur expedita, voluptatem magni! Fuga ducimus aperiam eveniet numquam, voluptatum quia reiciendis eligendi alias fugiat voluptatem, iste quam suscipit, dolores architecto delectus error! Soluta.</div>
+                <div class="col col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut aliquam facilis natus ipsa enim facere ad soluta ea minus.</div>
+                <div class="col col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique impedit vero maiores voluptates blanditiis iste repellat vel totam culpa explicabo laborum, ut provident ducimus rem rerum aut vitae, consequatur et molestiae ipsa necessitatibus earum quaerat animi. Assumenda, impedit, ea.</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
+
+</body>
+</html>
