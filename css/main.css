@@ -1,0 +1,126 @@
+body {
+    background-color: #5b6977;
+    line-height: 1;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;                        /*Родственник - прозрачность*/
+  z-index: 2;                                /*Прозрачность*/
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;                        /*смещение по горизонтали*/
+  left: 0;            /*смещение по горизонтали*/
+  height: 100%;       /*размер по высоте*/
+  width: 100%;         /*размер по ширине*/
+  background-color: black;        /*создает наложение чёрного цвета, для читабельности текста*/
+  opacity: 0.5;            /*прозрачность наложения*/
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/random') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+.col-6 {
+    padding: 2% 0 2%;
+    background-color: #ff5f5f;
+}
+
+.col {
+    color: white;
+    text-align:left
+}
+
+.form-group {
+    width: 300px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    margin-bottom: .7rem;
+    font-size: 100%;
+}
+
+.btn {
+    background-color: #582b2b00;
+    border: 2px solid #374061;
+    margin-top: 5px;
+    /* margin-right: 13px;
+    margin-left: 18px; */
+    padding: 0.3rem 2rem 0.3rem;
+    width: 300px;
+    margin-top: 7px;
+}
+
+.btn-reg {
+    color: white;
+}
+
+.btn-reg:hover {
+    color: white;
+    background-color: #11f324;
+    border: 1 solid #11f324;
+}
+.form-top {
+    padding-bottom: 0;
+    font-size: 140%;
+}
+
+.nav-tabs {
+    /* border-bottom: none;
+    width: 27%;
+    flex-direction: row-reverse; */
+    display: block;
+width: 100%;
+height: calc(2.25rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #495057;
+background-clip: padding-box;
+border-radius: .25rem;
+border-bottom: none;
+}
+
+.form-horizontal {
+    margin-top: 11px;
+}
+
+.form-top label {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.col-4 {
+    margin: -6px 0;
+    padding: 0 40px;
+}
